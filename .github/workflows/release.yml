@@ -356,7 +356,7 @@ jobs:
           name: fade-${{ matrix.platform }}
           path: ${{ steps.stage.outputs.stage }}/*
           if-no-files-found: error
-          retention-days: 3
+          retention-days: 1
 
       - name: Upload signature (for finalize job)
         uses: actions/upload-artifact@v4
@@ -364,7 +364,7 @@ jobs:
           name: fade-sig-${{ matrix.platform }}
           path: ${{ steps.stage.outputs.sig_file }}
           if-no-files-found: error
-          retention-days: 3
+          retention-days: 1
 
   finalize:
     name: Assemble latest.json and publish release
