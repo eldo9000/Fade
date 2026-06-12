@@ -1,7 +1,7 @@
 # Fade crash reporter
 
 A tiny Cloudflare Worker that proxies diagnostic reports from the Fade
-desktop app into a GitHub `repository_dispatch` event. The Fade-App
+desktop app into a GitHub `repository_dispatch` event. The Fade
 workflow `.github/workflows/diag-report.yml` receives the dispatch and
 opens an issue containing the payload.
 
@@ -19,14 +19,14 @@ incoming requests look like real diagnostic payloads before forwarding.
 npm i -g wrangler
 
 # create a fine-grained PAT at https://github.com/settings/tokens?type=beta
-#   Repository access: Only Fade-App
+#   Repository access: Only Fade
 #   Permissions → Repository → Contents: Read and write
 #   (repository_dispatch requires Contents write)
 
 wrangler login
 wrangler secret put GH_TOKEN   # paste the PAT
 wrangler secret put GH_OWNER   # eldo9000
-wrangler secret put GH_REPO    # Fade-App
+wrangler secret put GH_REPO    # Fade
 wrangler deploy
 ```
 
@@ -41,7 +41,7 @@ Note the deployed URL (e.g.
 # health check — should return 200 with {"ok":true,...}
 curl https://fade-crash-reporter.<account>.workers.dev
 
-# simulated report — should return 204 and open an issue on Fade-App
+# simulated report — should return 204 and open an issue on Fade
 curl -X POST https://fade-crash-reporter.<account>.workers.dev/report \
   -H 'content-type: application/json' \
   -d '{"version":"0.0.0-test","beta":true,"userAgent":"curl","entries":[{"t":'"$(date +%s)"'000,"source":"test","message":"hello from curl"}]}'
@@ -62,4 +62,4 @@ redeploy needed.
   the Worker keeps no logs beyond Cloudflare's standard request logs.
 - No authentication. The endpoint is public by design (no token to
   leak), and the worst a bad actor can do is open junk issues on
-  Fade-App, which we can delete and filter by label.
+  Fade, which we can delete and filter by label.

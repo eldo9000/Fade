@@ -452,7 +452,7 @@ jobs:
           MANIFEST="latest.json"
           node - <<'NODE_EOF' > "$MANIFEST"
           const fs = require('fs');
-          const base = 'https://github.com/eldo9000/Fade-App/releases/download/' + process.env.TAG + '/';
+          const base = 'https://github.com/eldo9000/Fade/releases/download/' + process.env.TAG + '/';
           // VERSION is the full tag version (e.g. 0.7.0-beta.1) for the manifest version field.
           // VERSION_BASE is used for artifact filenames (Tauri names them from tauri.conf.json).
           const v = process.env.VERSION;

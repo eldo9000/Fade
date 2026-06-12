@@ -2,7 +2,7 @@
 //
 // Accepts POST /report from the Fade client, validates it, and forwards the
 // payload to GitHub's repository_dispatch API on behalf of a server-side PAT.
-// A workflow in the Fade-App repo receives the dispatch and opens an issue.
+// A workflow in the Fade repo receives the dispatch and opens an issue.
 //
 // This Worker is the ONLY place the GitHub token lives — it is never shipped
 // in the client. Keep the endpoint URL public (it's fine — the worst someone
@@ -10,11 +10,11 @@
 // Worker code itself ever leaks.
 //
 // Secrets required (set via `wrangler secret put <NAME>`):
-//   GH_TOKEN  — fine-grained PAT, repo-scoped to Fade-App, with
+//   GH_TOKEN  — fine-grained PAT, repo-scoped to Fade, with
 //               "Contents: read and write" permission (required for
 //               repository_dispatch).
 //   GH_OWNER  — e.g. "eldo9000"
-//   GH_REPO   — e.g. "Fade-App"
+//   GH_REPO   — e.g. "Fade"
 
 const MAX_BODY_BYTES = 64 * 1024; // ≈100-entry ring buffer fits comfortably
 

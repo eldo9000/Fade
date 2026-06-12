@@ -42,7 +42,7 @@ Fade detects these at runtime. If they're missing, the relevant feature shows a 
 
 ## Install
 
-1. Go to the [latest release page](https://github.com/eldo9000/Fade-App/releases/latest).
+1. Go to the [latest release page](https://github.com/eldo9000/Fade/releases/latest).
 2. Download the `.dmg` file (named something like `Fade_0.2.0_aarch64.dmg`).
 3. Open the DMG and drag **Fade** into your **Applications** folder.
 4. Eject the DMG.
@@ -132,7 +132,7 @@ path accordingly.
 Open **Console.app** (press Cmd+Space, type "Console"), click **Crash
 Reports** in the sidebar, and look for a recent `Fade` entry. The top
 few lines usually identify the problem. If you can't make sense of the
-report, [open an issue](https://github.com/eldo9000/Fade-App/issues) and
+report, [open an issue](https://github.com/eldo9000/Fade/issues) and
 paste the first ~20 lines.
 
 **The updater banner never appears even though there's a new release.**
@@ -143,5 +143,5 @@ you're on a restrictive network, GitHub may be blocked.
 **"The application can't be opened" after an update.**
 Rare, but if an update leaves Fade in a broken state, delete
 `/Applications/Fade.app` and reinstall from the
-[latest release](https://github.com/eldo9000/Fade-App/releases/latest).
+[latest release](https://github.com/eldo9000/Fade/releases/latest).
 Your settings are preserved.

@@ -11,7 +11,7 @@
     updateState = $bindable('idle'),
   } = $props();
 
-  const RELEASES_URL = 'https://github.com/eldo9000/Fade-App/releases/latest';
+  const RELEASES_URL = 'https://github.com/eldo9000/Fade/releases/latest';
   const isManualUpdatePlatform = typeof navigator !== 'undefined'
     && /Mac|Windows/.test(navigator.userAgent);
 

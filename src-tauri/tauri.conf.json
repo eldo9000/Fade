@@ -45,7 +45,7 @@
     "updater": {
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDQyNkQ5QzQ4MUI1M0ExOEIKUldTTG9WTWJTSnh0UW0wMDBrM1ZWRjZ2UGdIRVRkQkY1bUpBZnBIQ2VsSkF3Y3R3QzFrbHBKTGwK",
       "endpoints": [
-        "https://github.com/eldo9000/Fade-App/releases/latest/download/latest.json"
+        "https://github.com/eldo9000/Fade/releases/latest/download/latest.json"
       ]
     }
   },

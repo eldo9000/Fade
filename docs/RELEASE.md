@@ -18,7 +18,7 @@ public key.
 1. On startup (after a 2-second delay so it doesn't block launch),
    the frontend calls `check()` from `@tauri-apps/plugin-updater`.
 2. The plugin fetches `latest.json` from the configured endpoint:
-   `https://github.com/eldo9000/Fade-App/releases/latest/download/latest.json`
+   `https://github.com/eldo9000/Fade/releases/latest/download/latest.json`
 3. If `latest.json` advertises a version newer than the current app,
    a banner appears in the window titlebar area.
 4. On "Install & restart", the plugin downloads the `.app.tar.gz`
@@ -92,7 +92,7 @@ Each GitHub Release must attach:
 ## `latest.json` format
 
 The updater endpoint is pinned to
-`https://github.com/eldo9000/Fade-App/releases/latest/download/latest.json`.
+`https://github.com/eldo9000/Fade/releases/latest/download/latest.json`.
 GitHub serves the `latest` alias automatically, so CI doesn't need
 to rewrite anything — just attach `latest.json` to each release.
 
@@ -106,11 +106,11 @@ Example:
   "platforms": {
     "darwin-aarch64": {
       "signature": "<contents of Fade.app.tar.gz.sig>",
-      "url": "https://github.com/eldo9000/Fade-App/releases/download/v0.2.0/Fade.app.tar.gz"
+      "url": "https://github.com/eldo9000/Fade/releases/download/v0.2.0/Fade.app.tar.gz"
     },
     "darwin-x86_64": {
       "signature": "<contents of Fade.app.tar.gz.sig>",
-      "url": "https://github.com/eldo9000/Fade-App/releases/download/v0.2.0/Fade.app.tar.gz"
+      "url": "https://github.com/eldo9000/Fade/releases/download/v0.2.0/Fade.app.tar.gz"
     }
   }
 }
@@ -211,7 +211,7 @@ extension.
    ```
 4. Watch the "Release" workflow in the GitHub Actions tab. On
    success, the release is live at
-   `https://github.com/eldo9000/Fade-App/releases/tag/v0.2.0` and the
+   `https://github.com/eldo9000/Fade/releases/tag/v0.2.0` and the
    `latest.json` endpoint starts serving it immediately.
 
 ### Testing the workflow manually

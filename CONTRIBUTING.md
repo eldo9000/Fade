@@ -14,8 +14,8 @@ set up and landing changes.
 ## Local dev setup
 
 ```sh
-git clone https://github.com/eldo9000/Fade-App.git
-cd Fade-App
+git clone https://github.com/eldo9000/Fade.git
+cd Fade
 npm install
 npm run tauri dev
 ```
@@ -67,4 +67,4 @@ Scopes (e.g. `feat(ui): ...`, `fix(backend): ...`) are welcome but not required.
 
 ## Questions
 
-Open a discussion at https://github.com/eldo9000/Fade-App/discussions.
+Open a discussion at https://github.com/eldo9000/Fade/discussions.
