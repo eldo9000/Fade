@@ -1,4 +1,4 @@
-# Fade-App Observer State
+# Fade Observer State
 Last updated: 2026-05-07  ·  Run 21
 
 ---

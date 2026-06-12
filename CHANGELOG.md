@@ -208,7 +208,7 @@ data, document, and archive conversion, plus a redesigned queue-driven UI.
   invoking the signer.
 - Bumped to v0.2.0.
 
-[Unreleased]: https://github.com/eldo9000/Fade-App/compare/v0.2.2...HEAD
-[0.2.2]: https://github.com/eldo9000/Fade-App/releases/tag/v0.2.2
-[0.2.1]: https://github.com/eldo9000/Fade-App/releases/tag/v0.2.1
-[0.2.0]: https://github.com/eldo9000/Fade-App/releases/tag/v0.2.0
+[Unreleased]: https://github.com/eldo9000/Fade/compare/v0.2.2...HEAD
+[0.2.2]: https://github.com/eldo9000/Fade/releases/tag/v0.2.2
+[0.2.1]: https://github.com/eldo9000/Fade/releases/tag/v0.2.1
+[0.2.0]: https://github.com/eldo9000/Fade/releases/tag/v0.2.0
